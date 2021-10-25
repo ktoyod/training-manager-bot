@@ -1,14 +1,18 @@
-# Welcome to your CDK TypeScript project!
+# training-manager-bot
 
-This is a blank project for TypeScript development with CDK.
+トレーニング記録を所定のフォーマットで記入するといい感じにDB管理してくれるようなボット
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## トレーニング記録フォーマット
 
-## Useful commands
+```
+{YYYYMMDD}
+{xx.xx}kg
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+{種目名1}
+{重量}x{回数},{重量}x{回数}
+{種目名2}
+{重量}x{回数},{重量}x{回数},{重量}x{回数}
+
+備考
+```
+
